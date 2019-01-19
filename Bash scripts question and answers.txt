@@ -1,0 +1,53 @@
+Questions	Answers
+What is Decision Making?	Based on the decision the code will executed
+What is flow control ?	Flow control either it is true or false it executes the code.
+Draw the flow control of code?	true<--------code-------->false
+How flow is controlled?	The flow is controlled based on the code result.
+When the true flow control executes?	if the code result is true its executes successfully
+When the false flow control executes?	if the code result is false its means unsuccessfull
+What is return value for true?	0(Zero)
+What is the return value for false?	1(non-zero)
+Why we need conditions?	We check the conditions based decision making.
+How many types of tests are there?	3
+What are the various tests?	1.Tests for Files 2.Tests between two strings 3.Tests between two Numbers
+What is Test for files?	1.Does the Files Exists? 2.Does the Directory Exists?
+What are tests between two Strings?	1.is STRING1 = STRING2 , 2.is STRING1 != STRING2, 3.is -z STRING
+What are tests between two Numbers?	1.Is NUM1 -gt NUM2 , 2.IS NUM1 -lt NUM2 , 3. IS NUM1 -eq NUM2 , 4.Is NUM1 -ne NUM2
+What is regular files & where it is used in various tests?	Regular files is daily using files & it is used in tests for files.
+How to specify Regular files?	[ -f ]
+How to specify the Directory files?	[ -d ]
+What is [ ]?	[ ] is a testing operator.
+What is test?	it is also test
+What is diffrences between the [ ] & test?	Both are same.
+What is = ,where it is used?	it is a equal operator to specify the strings are equal.
+What is !=?	it is not equal operator to specify the strings are not equal.
+What is -z?	It specifies the Zero length of the string.
+What is -gt?	it is a greater than operator used in tests between two numbers
+What is -lt?	it is less than operator used in tests between two numbers
+What is -eq?	it is equal than operator used in tests between two numbers.
+What is -ne?	it is not equal operator used in tests between two numbers.
+What is differences between the tests between the Strings & Numbers?	In tests between the Strings we use the symbols but in Numbers we are not using the symbols for tests
+What are sumbols used in tests for files?	For Regular files(-f) and Directory files(-d)
+What are symbols used in tests for Strings?	(= , != , -z)
+What are the operators used in tests for Numbers?	(-lt , -le ,-gt , -ge , -eq , -ne)
+What are two types of files are there in unix system?	one is regular files & another one is directory files
+How many types of files are there in unix system?	2 types
+Where the symbols are used for testing like = , != …?	For tests between the two strings.
+What is very important point we are using?	We use the space after [ and before ]
+Is space is mandatory before and after the operator?	Yes its mandatory,
+What is format of testing the regular files?	[ -f /home/ncodeit/divya.txt ]
+What is format of testing the directory files?	[ -d /home/ncodeit ]
+What is the format of testing the strings?	[ NCODEIT = NCODEIT1 ]
+What is the format of testing the Numbers?	[ 1 -eq 1 ]
+What is single equal to (=) ?	Testing the two STRINGS equal or not
+What is double equal to (==)?	Testing the two STRINGS equal or not
+What is differences between the = & ==?	Both are same,both operators used to tests the strings.
+What is return value for true defines?	successful
+What is return value for false defines?	Failure or unsuccessful
+What is return value for false range?	1-255
+How to check the exit status of command?	echo $?
+What is [ -f /etc/hosts ]	it is regular file so it dispalys the return value as zero
+What is [ -d /etc/hosts ]	it is not directory so it displays the return value as one
+What is [ -e /etc/hosts ]	if the file exists it displays the return value as zero
+What is -e?	testing if the file is exists or not
+How to specify the exists file?	[ -e ]

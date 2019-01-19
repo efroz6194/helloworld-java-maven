@@ -1,0 +1,71 @@
+Continuous integration means  integrating and sharing all the developers work together to automate a software release in a less span of time.	
+We can see different stages in this life cycle,	
+	
+Planning stage :	
+At this stage architect team will plan for entire flow according to client requirement and they will manage and track entire flow of things.	
+Best tool for this stage is Jira.	
+	
+Source code management :	
+At this stage developer will develop the code and they will put it into a repository.	
+For this developers uses git, github some times gerrit also.	
+	
+Code Review :	
+Here Code analyst team will cross check the code that code written by developers.	
+If the code is not good or not correct or any issues with the code, again it will send back to the developers.	
+For this code review Sonarqube is a best tool.	
+	
+Build Management :	
+After successful completion of code review, the source code will be converted into binary code. Which is performed by Build engineers.	
+For this build management we have many tools like Maven, MSbuild etc.	
+	
+Unit testing :	
+After completion of code review ,again developers will test that binary code unit wise in order to make sure the binary code is perfect.	
+For this we can use JUNIT tool.	
+	
+Packaging :	
+After converting the source code into binary code ,it will be packaged as JAR,WAR and EAR Packages by infra-structure team.	
+	
+Arti factory Repository management :	
+After packaging the Code as JAR and WAR packages, infra team put that packages in a artifact repository like Nexus Repository.	
+	
+Deploy to QA environment :	
+Here middle ware team will deploy JAR, WAR packages from artifact repo into QA environment.	
+For this can use tools like CHEF,ANSIBLE,PUPPET,DOCKER etc	
+	
+TESTING :	
+After deploying the packages into QA environment, QA Testers will Test that code or packages for acceptance by using manual testing or automation testing tools like selenium, QTP ect	
+Selection of tool is based on type of testing	
+	
+Code coverage :	
+which is to measuring or knowing how much of code is tested during QA testing.	
+For this we can use tools like Jacoco,codecover etc	
+	
+Release :	
+After completion of all stages of above , Release manager will cross check every thing ,then finally product will goes to Release.	
+	
+	
+	
+For all continuous integration and delivery of a product we can use docker or Jenkins etc which will give product release within a less span of time.	
+CI/CD through Docker :	
+For this we need to install docker and make sure its running.	
+	
+Planning stage-JIRA : Here we can get the jira image from dockerhub and we make sure its running. Then access JIRA in browser, and we can plan for new project or we can customize an existing one.	
+Here we can create a new task or modify the existing task according client requirement by mentioning required fields, then assign it to develop team.	
+	
+Source code management-GIT&GITHUB : here developers will write the code and they push the code into GITHUB Repository	
+And for integrating JIRA with GITHUB we will use tools like "Git integration for jira", for fixing or assigning the code to the task of our project we need to give URL of source code in our github repository to JIRA.	
+	
+Code Review-Sonarqube : after completion of integration of GIT with JIRA, to review the source code we makesure sonarqube image installed, sonarqube container is running and accessible in browser.	
+To do code review using Sonarqube we need 3 things sonarqube server,source code and sonarqube scanner.	
+Then to tell sonarqube server details to scanner we need to mention the URL of sonarqube server in sonar-scanner.properties file and then we will run scanner under the location of source code ,	
+here scanner will do read all the files in source code and verify its perfect or not.	
+And Scanner will put all the souce code onto the sonarqube-server	
+	
+Build Management-Maven : here Maven is responsible for building and managing the project means which will create base-line for build the code,compiling the code, packaging and version code	
+	
+Unit test-JUNIT :	
+Packaging : JAR and WAR packages	
+	
+Artifact Repo Management-Nexus : after packaging the source code as JAR and WAR packages we need to store there packages in a binary repository for we use Nexus.	
+So makesure nexus image installed, running and accessible on browser.	
+	
